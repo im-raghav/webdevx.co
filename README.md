@@ -3,27 +3,28 @@
 ```bash
 #-- Setup and start the server
 cd server
-npm install # or yarn install
-npm start # or yarn start
+npm install 
+npm start
 
 #-- Setup and start the client
 cd client
-npm install # or yarn install
-npm start # or yarn start
+npm install 
+npm start 
 ```
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. Describe any other approaches that can be better than the above solution performance-wise. 
-Ans. 
-While WebSockets can be a good approach for real-time communication between a client and a server, it may not be the most performant solution for saving data to a server and retrieving it across different devices. Here are a few alternative approaches to consider:
+
+Ans. While WebSockets can be a good approach for real-time communication between a client and a server, it may not be the most performant solution for saving data to a server and retrieving it across different devices. Here are a few alternative approaches to consider:
 
 -Server-side storage: Instead of relying on local storage on the client-side, we could store the user's progress on the server-side, such as in a database. This would ensure that the progress is accessible across different devices and browsers, without requiring real-time communication between the client and server.
 
 -API calls: Another approach could be to have the client make API calls to the server to save and retrieve the user's progress. This would allow for more control over the data being transmitted and can be used to optimize performance by sending only the data that has been modified.
 
 Overall, the best approach will depend on the specific requirements of application, as well as performance and security needs. It's important to consider factors such as the size and frequency of the data being transferred, the level of security required, and the resources available to store and retrieve the data.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-OPEN QUESTION :
+**OPEN QUESTION** :
 1) What is your approach to debugging the backend application? 
 Ans. 
 -Logging: By logging the relevant information at different stages of the application, we can easily trace the execution path and identify the source of any errors. This is particularly helpful when an application is deployed in a production environment, where it's not always feasible to debug the application interactively.
@@ -37,6 +38,7 @@ Ans.
 -Break the problem into smaller parts: Debugging a complex application can be overwhelming. Breaking the problem into smaller parts can help make it more manageable. You can start by identifying the most critical features and functions of your application and focus your debugging efforts on those areas.
 
 -Collaborate: Collaborating with colleagues, or other developers can help us gain new insights and identify solutions we might not have considered before.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) What are migrations in a database? Why they are important? Describe how you would solve the data type conversion, and character set mismatch issues when applying
 schema conversion and data migration.
